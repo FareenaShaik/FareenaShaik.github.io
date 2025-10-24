@@ -1,10 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-This is a personal website.
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>
-This site has been temporarily taken down to make a few changes!!
-</h1
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">MyPortfolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero fade-in">
+    <div class="hero-content slide-up">
+      <h2>Hi, I'm <span class="highlight">Fareena Shaik</span></h2>
+      <p>A passionate Data Engineer & Developer</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section fade-in">
+    <div class="container slide-up">
+      <h2>About Me</h2>
+      <p>I’m a creative developer who loves crafting beautiful and functional digital experiences. With a focus on modern web technologies, I transform ideas into reality through thoughtful design and clean code.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section fade-in">
+    <div class="container slide-up">
+      <h2>My Work</h2>
+      <div class="grid">
+        <div class="card"><img src="https://picsum.photos/400/300?1" alt=""><h3>Project One</h3></div>
+        <div class="card"><img src="https://picsum.photos/400/300?2" alt=""><h3>Project Two</h3></div>
+        <div class="card"><img src="https://picsum.photos/400/300?3" alt=""><h3>Project Three</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section fade-in">
+    <div class="container slide-up">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 / CSS3 / JavaScript</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Design</li>
+        <li>React & Frontend Frameworks</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section fade-in">
+    <div class="container slide-up">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Fareena Shaik. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
