@@ -1,0 +1,239 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  transition: background 0.5s, color 0.5s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-weight: 600;
+  color: #111;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6b6b;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url('https://picsum.photos/1920/1080?blur') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+}
+
+.highlight {
+  color: #ff6b6b;
+}
+
+.btn {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ff8787;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.slide-up {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.slide-up.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .navbar {
+  background: rgba(18,18,18,0.95);
+}
+
+body.dark footer {
+  background: #000;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
+
+body.dark .skills-list li {
+  background: #1e1e1e;
+}
+
+body.dark .btn {
+  background: #4f46e5;
+}
+
+body.dark .btn:hover {
+  background: #6d63ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+  .nav-links {
+    display: none;
+  }
+}
