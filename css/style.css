@@ -237,3 +237,31 @@ body.dark .btn:hover {
     display: none;
   }
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.social-links a {
+  color: #ff6b6b;
+  font-size: 2.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff8787;
+  transform: scale(1.2);
+}
+
+/* Dark mode tweak */
+body.dark .social-links a {
+  color: #4f46e5;
+}
+
+body.dark .social-links a:hover {
+  color: #6d63ff;
+}
+
