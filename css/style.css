@@ -71,36 +71,42 @@ body {
   transform: scale(1.2);
 }
 
-/* Hero */
+/* Hero Section (clean split style) */
 .hero {
-  height: 100vh;
-  background: url('https://picsum.photos/1920/1080?blur') no-repeat center center/cover;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(36, 36, 36, 0.85) 50%, rgba(36, 36, 36, 0.85) 50%), 
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80')
+              no-repeat center right / cover;
+  color: #fff;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 2px;
   color: #fff;
 }
 
-.hero-content h2 {
-  font-size: 2.8rem;
+.hero .highlight {
+  color: #00ff85; /* modern green accent */
 }
 
-.highlight {
-  color: #ff6b6b;
-}
-
-.btn {
-  background: #ff6b6b;
-  color: #fff;
-  padding: 10px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #ff8787;
+.hero p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #ccc;
+  text-transform: uppercase;
 }
 
 /* Sections */
@@ -230,11 +236,17 @@ body.dark .btn:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-content h2 {
-    font-size: 2rem;
+  .hero {
+    justify-content: center;
+    padding: 0 20px;
+    background-position: center;
+    background-size: cover;
   }
-  .nav-links {
-    display: none;
+  .hero-content {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
   }
 }
 
