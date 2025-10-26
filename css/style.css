@@ -143,6 +143,83 @@ h2 {
   display: block;
 }
 
+/* About Section Box Style */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') center/cover;
+}
+
+.about-box {
+  background: #1b2a41;
+  color: #fff;
+  padding: 60px 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.about-icon {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #00ff85;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #00ff85;
+  margin: 0 auto 20px;
+  font-weight: 600;
+}
+
+.about-box p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.resume-btn {
+  display: inline-block;
+  color: #00ff85;
+  border: 1px solid #00ff85;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.resume-btn:hover {
+  background: #00ff85;
+  color: #1b2a41;
+}
+
+/* Dark mode tweak */
+body.dark .about-box {
+  background: #0d1117;
+  color: #ddd;
+}
+
+body.dark .resume-btn {
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+body.dark .resume-btn:hover {
+  background: #4f46e5;
+  color: #fff;
+}
+
+
 /* Skills */
 .skills-list {
   display: flex;
